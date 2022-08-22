@@ -25,6 +25,10 @@ body {
   font-weight: 500;
   letter-spacing: 0.03em;
 }
+
+img{
+  display: block;
+}
 .list {
   list-style: none;
   margin-top: 0;
@@ -46,7 +50,7 @@ li{
   margin-right: auto;
   width: 1200px;
 }
-section {
+.section {
   padding: 94px 0;
 
 }
@@ -84,6 +88,7 @@ section {
 .nav-list,
 .contact-list {
   display: flex;
+  align-items: center;
 }
 .nav-list li,
 .contact-list li,
@@ -209,8 +214,9 @@ section {
   margin-right: 0;
 }
 .team{
-  padding: 94 0 94 0;
+
   background: #F5F4FA;
+
 }
 .team-list-title {
   margin-bottom: 50px;
@@ -222,14 +228,20 @@ section {
   line-height: 1.17;
   text-align: center;
 }
+.wrap{
+  border: 1px solid #eeeeee;
+  border-radius: 0px 0px 4px 4px;
+}
 .name-subject{
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
 }
+
 .subject {
-  margin-top: 30px;
   margin-bottom: 10px;
   color: var(--secondary-text-color);
   font-family: 'Roboto';
@@ -239,7 +251,6 @@ section {
   line-height: 1.18;
 }
 .subtitle {
-  margin-bottom: 30px;
   color: var(--primary-text-color);
   font-family: 'Roboto';
   font-style: normal;
@@ -252,17 +263,15 @@ section {
 
 footer {
   background-color: var(--secondary-bcg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-info{
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
-
-  
 }
 .address-logo {
   margin-bottom: 20px;
-  margin-top: 60px;
   color: var(--white-color);
   font-family: Raleway, cursive;
   font-weight: 700;
@@ -312,6 +321,10 @@ footer {
   clip-path: inset(50%);
   margin: -1px;
 }
+.last-section{
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 .button-one {
   display: inline-block;
   padding: 6px 25px;
@@ -354,24 +367,23 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 .content-item{
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
   width: 370px;
-  height: 404px;
+  
 }
 
 .heading{
   padding-left: 24px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   min-width: 322px;
-
+padding-right: 24px;
+padding-top: 20px;
 }
 
 .features-title {
-  margin-top: 20px;
   margin-bottom: 4px;
   color: var(--secondary-text-color);
   font-family: Roboto;
