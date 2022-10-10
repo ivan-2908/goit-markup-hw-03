@@ -51,18 +51,25 @@ li{
 .container {
   width: 100%;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
+
+.first-section{
+  padding-top: 94px;
+}
+
 .section {
   padding: 94px 0;
-
 }
 
 /* header */
 .page-header{
-  border: 1px solid #ECECEC
+  border-bottom: 1px solid #ECECEC;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
 }
 
 .logo {
@@ -84,7 +91,6 @@ li{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 0;
 
 }
 .navigation {
@@ -206,7 +212,7 @@ li{
 .benefits,
 .team-list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 .button-list {
   display: flex;
@@ -214,7 +220,7 @@ li{
   margin-bottom: 50px;
 }
 .button-list li {
-  margin-right: 15px;
+  margin-right: 8px;
 }
 .button-list li:last-child {
   margin-right: 0;
@@ -375,11 +381,11 @@ footer {
 .content-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 30px;
+  flex-basis:  calc((100%-60px)/3);
 }
 .content-item{
   border: 1px solid #eeeeee;
-  margin-bottom: 30px;
   width: 370px;
 }
 .content-item:nth-last-child(-n+3){
